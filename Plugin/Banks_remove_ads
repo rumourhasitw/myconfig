@@ -4,8 +4,8 @@
 #!author = Rumourhasit
 #!keyword = 去广告
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
-#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Bank.png
-#!date = 2024-07-11 19:10:01
+#!icon = 
+#!date = 2024-08-12 19:10:01
 
 [Rule]
 # 建设银行 - 已收录|adrules
