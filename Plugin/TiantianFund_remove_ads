@@ -2,6 +2,7 @@
 #!desc= 过滤天天基金开屏广告。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/TiantianFund.png
 #!author = Rumourhasit
+#!date = 2024-08-12 20:23:47
 
 [rule]
 # 天天基金去广告规则
