@@ -1,0 +1,35 @@
+#!name = 银行去广告
+#!desc = 去除部分银行应用的广告。
+#!openUrl = 
+#!author = Rumourhasit
+#!keyword = 去广告
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Bank.png
+#!date = 2024-07-11 19:10:01
+
+[Rule]
+# 建设银行 - 已收录|adrules
+# DOMAIN, adv.ccb.com, REJECT
+
+
+[Rewrite]
+# 民生银行
+^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ reject-200
+^https:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png reject-200
+
+# 掌上生活
+^https?:\/\/mbasecc\.(bas|bcs)\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec reject-dict
+^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec reject
+^https?:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender\.api\.AdWork\/getAdsBySlotId reject-dict
+
+# 招商银行 - 去开屏广告
+^https:\/\/s3gw\.cmbimg\.com\/mbappinitads\/ reject
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig reject-200
+
+# 中国银行
+^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg reject-200
+^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\?txnId=2PIC000001 reject-200
+
+
+[Mitm]
+hostname = www.cmbc.com.cn, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com

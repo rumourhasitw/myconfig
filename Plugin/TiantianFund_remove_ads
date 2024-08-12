@@ -1,0 +1,38 @@
+#!name= 天天基金去广告
+#!desc= 过滤天天基金开屏广告。
+#!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/ttjj.png
+#!author = Rumourhasit
+
+[rule]
+# 天天基金去广告规则
+DOMAIN,ttdns.95021.com,REJECT
+DOMAIN,ttdns.1234567.com.cn,REJECT
+DOMAIN,ttdns.tiantianfunds.com,REJECT
+
+DOMAIN,np-newspic.dfcfw.com,REJECT
+# DOMAIN-SUFFIX,uni-fundts.1234567.com.cn,REJECT
+# DOMAIN,mp.1234567.com.cn,REJECT
+# DOMAIN-SUFFIX,eastmoney.com,REJECT
+
+[rewrite]
+^https:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg reject-dict
+
+
+# test
+^https:\/\/roadshow\.lvb\.eastmoney\.com reject
+
+^https:\/\/uni-fundts\.1234567\.com\.cn reject
+
+^https:\/\/mp\.1234567\.com\.cn\/ConfigApplet reject
+
+^https:\/\/appconfig2\.1234567\.com\.cn\/config reject
+
+^https:\/\/np-fundlist\.eastmoney\.com reject
+
+^https:\/\/community\.tiantianfunds\.com\/community reject
+
+
+
+[mitm]
+hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, uni-fundts.1234567.com.cn, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com
+
