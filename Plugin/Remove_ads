@@ -4,12 +4,24 @@
 #!openUrl =
 #!homepage =
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-08-12 17:07:47
+#!date = 2024-08-18 14:13:47
 
 
 [Rule]
 # 拦截100
 DOMAIN-SUFFIX,ntb.lanjie100.com,REJECT
+
+# Outlook
+DOMAIN, acdn.adnxs.com, REJECT
+DOMAIN, mediation.adnxs.com, REJECT
+DOMAIN, sin3-ib.adnxs.com, REJECT
+
+# 米家
+DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
+
+# 通用广告
+DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
+DOMAIN-SUFFIX, doubleclick.net, REJECT
 
 
 [Rewrite]
@@ -18,19 +30,24 @@ DOMAIN-SUFFIX,ntb.lanjie100.com,REJECT
 ^https:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
 ^https?:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml reject
 
+
 # > ———————————— B ————————————
 # > ———————————— C ————————————
 # 超星学习通 //learn.chaoxing.com
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? reject
 
+
 # > ———————————— D ————————————
 # 大众点评 //img.meituan.net
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png reject-dict
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) reject-200
+
 # 大麦去开屏广告
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
+
 # 丁香医生 //dxy.com
 ^https?:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch reject
+
 
 # > ———————————— E ————————————
 # 饿了么 //elemecdn.com,fuss10.elemecdn.com,www1.elecfans.com,
@@ -40,35 +57,47 @@ DOMAIN-SUFFIX,ntb.lanjie100.com,REJECT
 ^https:\/\/fuss10.elemecdn.com\/.+\.mp4 reject
 ^https:\/\/www1.elecfans.com\/www\/delivery reject
 
+
 # > ———————————— F ————————————
 # 飞猪旅行
 ^http?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch reject-dict
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson reject-img
+
 
 # > ———————————— G ————————————
 # > ———————————— H ————————————
 # 华宝智投去广告
 ^https:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement reject-200
 ^https:\/\/api\.touker\.com\/v2\/user\.queryUserAdsense reject-dict
+
 # 花小猪打车
 ^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity reject-dict
+
+# 航旅纵横
+^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
+^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
+
 
 # > ———————————— I ————————————
 # > ———————————— J ————————————
 # 交管12123
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
-# 建行生活 //yunbusiness.ccb.com
-^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(2|6|9) reject-200
+
 
 # > ———————————— K ————————————
 # > ———————————— L ————————————
 # 拦截100
 https://tagit.hyhuo.com/recover/list reject
 
+
 # > ———————————— M ————————————
 # 麦当劳去广告
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
+
+# 米家
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
+
 
 # > ———————————— N ————————————
 # > ———————————— O ————————————
@@ -79,19 +108,29 @@ https://tagit.hyhuo.com/recover/list reject
 ^https?:\/\/homefront\.qunar\.com\/front\/splash\/ad reject-dict
 ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd reject
 
+# > QQ
+# QQ钱包广告 //m.qianbao.qq.com
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
+
+
 # > ———————————— R ————————————
 # 瑞幸咖啡 Luckin Coffee
 ^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/(homePage\/contactor\/modules|app\/adposNew) reject
 
+
 # > ———————————— S ————————————
 # 说咱闽南话
 ^https:\/\/app\.wjjya\.com\/api\/index\/config reject-dict
+
 
 # > ———————————— T ————————————
 # 同花顺去广告
 ^https:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend reject-dict
 ^https:\/\/u\.thsi\.cn\/imgsrc\/sns\/ reject-dict
 ^https:\/\/stat\.10jqka\.com\.cn\/q\?ld=mobile&id=adm_kaiping reject-dict
+
 
 # > ———————————— U ————————————
 # > ———————————— V ————————————
@@ -102,14 +141,20 @@ https://tagit.hyhuo.com/recover/list reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/client\/main\/homePageSmallAd reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/Client\/main\/startPage reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/version\/version\/check reject
+
 # 医保服务平台去开屏
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp reject
 
+
 # > ———————————— Z ————————————
+# 中国移动开屏广告
+^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
+
+
 # > ———————————— # ————————————
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, gab.122.gov.cn, yunbusiness.ccb.com, tagit.hyhuo.com, api.mcd.cn, qde.qunar.com, homefront.qunar.com, client.qunar.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn
+hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, tagit.hyhuo.com, api.mcd.cn, home.mi.com, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn
 
 
