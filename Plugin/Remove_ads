@@ -42,7 +42,7 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png reject-dict
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) reject-200
 
-# 大麦去开屏广告
+# 大麦去开屏广告 //acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
 
 # 丁香医生 //dxy.com
@@ -59,43 +59,43 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 
 
 # > ———————————— F ————————————
-# 飞猪旅行
+# 飞猪旅行 //amdc.m.taobao.com
 ^http?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch reject-dict
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson reject-img
 
 
 # > ———————————— G ————————————
 # > ———————————— H ————————————
-# 华宝智投去广告
+# 华宝智投去广告 //api.touker.com
 ^https:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement reject-200
 ^https:\/\/api\.touker\.com\/v2\/user\.queryUserAdsense reject-dict
 
-# 花小猪打车
+# 花小猪打车 //res.hongyibo.com.cn
 ^https:\/\/res\.hongyibo\.com\.cn\/os\/gs\/resapi\/activity reject-dict
 
-# 航旅纵横
+# 航旅纵横 //home.umetrip.com, umerp.umetrip.com
 ^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
 ^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
 
 
 # > ———————————— I ————————————
 # > ———————————— J ————————————
-# 交管12123
+# 交管12123 //gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
 
 
 # > ———————————— K ————————————
 # > ———————————— L ————————————
-# 拦截100
+# 拦截100 //tagit.hyhuo.com
 https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— M ————————————
-# 麦当劳去广告
+# 麦当劳去广告 //api.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
 
-# 米家
+# 米家 //home.mi.com
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
 
 
@@ -103,12 +103,11 @@ https://tagit.hyhuo.com/recover/list reject
 # > ———————————— O ————————————
 # > ———————————— P ————————————
 # > ———————————— Q ————————————
-# 去哪儿旅行
+# 去哪儿旅行 //qde.qunar.com, homefront.qunar.com, client.qunar.com
 ^https?:\/\/qde\.qunar\.com\/preload reject-200
 ^https?:\/\/homefront\.qunar\.com\/front\/splash\/ad reject-dict
 ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd reject
 
-# > QQ
 # QQ钱包广告 //m.qianbao.qq.com
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
@@ -116,17 +115,17 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— R ————————————
-# 瑞幸咖啡 Luckin Coffee
+# 瑞幸咖啡 //capi.lkcoffee.com
 ^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/(homePage\/contactor\/modules|app\/adposNew) reject
 
 
 # > ———————————— S ————————————
-# 说咱闽南话
+# 说咱闽南话 //app.wjjya.com
 ^https:\/\/app\.wjjya\.com\/api\/index\/config reject-dict
 
 
 # > ———————————— T ————————————
-# 同花顺去广告
+# 同花顺去广告 //adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn
 ^https:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend reject-dict
 ^https:\/\/u\.thsi\.cn\/imgsrc\/sns\/ reject-dict
 ^https:\/\/stat\.10jqka\.com\.cn\/q\?ld=mobile&id=adm_kaiping reject-dict
@@ -137,17 +136,17 @@ https://tagit.hyhuo.com/recover/list reject
 # > ———————————— W ————————————
 # > ———————————— X ————————————
 # > ———————————— Y ————————————
-# 医考帮
+# 医考帮 //api.yikaobang.com.cn
 ^https?:\/\/api\.yikaobang\.com\.cn\/client\/main\/homePageSmallAd reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/Client\/main\/startPage reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/version\/version\/check reject
 
-# 医保服务平台去开屏
+# 医保服务平台去开屏 //fuwu.nhsa.gov.cn
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp reject
 
 
 # > ———————————— Z ————————————
-# 中国移动开屏广告
+# 中国移动开屏广告 //client.app.coc.10086.cn
 ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
 
 
