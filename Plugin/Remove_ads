@@ -89,6 +89,7 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 ^https:\/\/dynamicad\.kfc\.com\.cn\/api reject-dict
 ^https:\/\/appcommon\.kfc\.com\.cn\/api\/lr\/messageBox reject-dict
 
+
 # > ———————————— L ————————————
 # 拦截100 //tagit.hyhuo.com
 https://tagit.hyhuo.com/recover/list reject
