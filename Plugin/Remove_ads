@@ -1,8 +1,6 @@
 #!name = 广告过滤器
 #!desc = 去除自用软件开屏广告。
 #!author = Rumourhasit
-#!openUrl =
-#!homepage =
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
 #!date = 2024-08-28 19:53:00
 
