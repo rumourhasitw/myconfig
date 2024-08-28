@@ -91,9 +91,10 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— M ————————————
-# 麦当劳去广告 //api.mcd.cn
+# 麦当劳去广告 //api.mcd.cn, img.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
+^https:\/\/img\.mcd\.cn\/cma\/img\/banner1\.jpg reject-dict
 
 # 米家 //home.mi.com
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
@@ -154,6 +155,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, tagit.hyhuo.com, api.mcd.cn, home.mi.com, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn
+hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn
 
 
