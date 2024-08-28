@@ -4,7 +4,7 @@
 #!openUrl =
 #!homepage =
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-08-18 14:13:47
+#!date = 2024-08-28 19:53:00
 
 
 [Rule]
@@ -85,13 +85,19 @@ DOMAIN-SUFFIX, doubleclick.net, REJECT
 
 
 # > ———————————— K ————————————
+# 肯德基(KFC) //res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn
+^https:\/\/res\.kfc\.com\.cn\/advertisement reject
+^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6 reject-dict
+^https:\/\/dynamicad\.kfc\.com\.cn\/api reject-dict
+^https:\/\/appcommon\.kfc\.com\.cn\/api\/lr\/messageBox reject-dict
+
 # > ———————————— L ————————————
 # 拦截100 //tagit.hyhuo.com
 https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— M ————————————
-# 麦当劳去广告 //api.mcd.cn, img.mcd.cn
+# 麦当劳(MCD) //api.mcd.cn, img.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
 ^https:\/\/img\.mcd\.cn\/cma\/img\/banner1\.jpg reject-dict
@@ -155,6 +161,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn
+hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn
 
 
