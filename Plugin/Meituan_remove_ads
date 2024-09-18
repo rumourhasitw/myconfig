@@ -2,7 +2,7 @@
 #!desc= 过滤美团及美团外卖开屏广告。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Meituan.png
 #!author = Rumourhasit
-#!date = 2024-08-18 15:05:33
+#!date = 2024-09-18 14:05:33
 
 
 [rule]
@@ -14,8 +14,8 @@ DOMAIN, babel-statistics-android.d.meituan.net, REJECT
 DOMAIN, maplocatesdksnapshot.d.meituan.net, REJECT
 DOMAIN, route-stats.d.meituan.net, REJECT
 
-# URL-REGEX,^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg$,REJECT
-# URL-REGEX,^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$,REJECT
+# URL-REGEX,^https:\/\/flowplus\.meituan\.net\/v1\/mss_\w+\/linglong\/\d+\.jpg$, REJECT
+# URL-REGEX,^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$, REJECT
 
 
 [rewrite]
@@ -24,7 +24,7 @@ DOMAIN, route-stats.d.meituan.net, REJECT
 ^https:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg reject-dict
 ^https:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json reject-dict
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ reject-dict
-^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends url reject-dict
+^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends reject-dict
 
 
 [mitm]
