@@ -11,9 +11,7 @@ DOMAIN,ttdns.1234567.com.cn,REJECT
 DOMAIN,ttdns.tiantianfunds.com,REJECT
 
 DOMAIN,np-newspic.dfcfw.com,REJECT
-# DOMAIN-SUFFIX,uni-fundts.1234567.com.cn,REJECT
-# DOMAIN,mp.1234567.com.cn,REJECT
-# DOMAIN-SUFFIX,eastmoney.com,REJECT
+
 
 [rewrite]
 ^https:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg reject-dict
