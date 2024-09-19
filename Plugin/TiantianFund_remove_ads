@@ -20,8 +20,6 @@ DOMAIN,np-newspic.dfcfw.com,REJECT
 # test
 ^https:\/\/roadshow\.lvb\.eastmoney\.com reject
 
-^https:\/\/uni-fundts\.1234567\.com\.cn reject
-
 ^https:\/\/mp\.1234567\.com\.cn\/ConfigApplet reject
 
 ^https:\/\/appconfig2\.1234567\.com\.cn\/config reject
@@ -33,5 +31,5 @@ DOMAIN,np-newspic.dfcfw.com,REJECT
 
 
 [mitm]
-hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, uni-fundts.1234567.com.cn, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com
+hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com
 
