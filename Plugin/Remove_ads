@@ -2,12 +2,12 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-09-27 18:00
+#!date = 2024-09-28 01:00
 
 
 [Rule]
 # 拦截100
-DOMAIN-SUFFIX,ntb.lanjie100.com,REJECT
+DOMAIN-SUFFIX, ntb.lanjie100.com, REJECT
 
 # Outlook
 DOMAIN, acdn.adnxs.com, REJECT
@@ -45,6 +45,7 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 
 
 # > ———————————— B ————————————
+
 # > ———————————— C ————————————
 # 超星学习通 //learn.chaoxing.com
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? reject
@@ -55,7 +56,7 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png reject-dict
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) reject-200
 
-# 大麦去开屏广告 //acs.m.taobao.com
+# 大麦 //acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
 
 # 丁香医生 //dxy.com
@@ -77,8 +78,9 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 
 
 # > ———————————— G ————————————
+
 # > ———————————— H ————————————
-# 华宝智投去广告 //api.touker.com
+# 华宝智投 //api.touker.com
 ^https:\/\/api\.touker\.com\/v2\/IAdvertisementAPI\.queryStartAdvertisement reject-200
 ^https:\/\/api\.touker\.com\/v2\/user\.queryUserAdsense reject-dict
 
@@ -91,13 +93,14 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 
 
 # > ———————————— I ————————————
+
 # > ———————————— J ————————————
 # 交管12123 //gab.122.gov.cn
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
 
 
 # > ———————————— K ————————————
-# 肯德基(KFC) //res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn
+# 肯德基 KFC //res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn
 ^https:\/\/res\.kfc\.com\.cn\/advertisement reject
 ^https:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6 reject-dict
 ^https:\/\/dynamicad\.kfc\.com\.cn\/api reject-dict
@@ -110,7 +113,7 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— M ————————————
-# 麦当劳(MCD) //api.mcd.cn, img.mcd.cn
+# 麦当劳 McDonald //api.mcd.cn, img.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
 ^https:\/\/img\.mcd\.cn\/cma\/img\/banner1\.jpg reject-dict
@@ -126,16 +129,20 @@ https://tagit.hyhuo.com/recover/list reject
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(?:brandcpt-vedio|waimai-alita)\/\w+\.zip$ reject-dict
 ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends reject-dict
 
+
 # > ———————————— N ————————————
+
 # > ———————————— O ————————————
+
 # > ———————————— P ————————————
+
 # > ———————————— Q ————————————
 # 去哪儿旅行 //qde.qunar.com, homefront.qunar.com, client.qunar.com
 ^https?:\/\/qde\.qunar\.com\/preload reject-200
 ^https?:\/\/homefront\.qunar\.com\/front\/splash\/ad reject-dict
 ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd reject
 
-# QQ钱包广告 //m.qianbao.qq.com
+# QQ钱包 //m.qianbao.qq.com
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
@@ -152,26 +159,30 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— T ————————————
-# 同花顺去广告 //adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn
+# 同花顺 //adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn
 ^https:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend reject-dict
 ^https:\/\/u\.thsi\.cn\/imgsrc\/sns\/ reject-dict
 ^https:\/\/stat\.10jqka\.com\.cn\/q\?ld=mobile&id=adm_kaiping reject-dict
 
 
 # > ———————————— U ————————————
+
 # > ———————————— V ————————————
+
 # > ———————————— W ————————————
 # 微信公众号 //mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(?:cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle) reject-dict
 
+
 # > ———————————— X ————————————
+
 # > ———————————— Y ————————————
 # 医考帮 //api.yikaobang.com.cn
 ^https?:\/\/api\.yikaobang\.com\.cn\/client\/main\/homePageSmallAd reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/Client\/main\/startPage reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/version\/version\/check reject
 
-# 医保服务平台去开屏 //fuwu.nhsa.gov.cn
+# 医保服务平台 //fuwu.nhsa.gov.cn
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp reject
 
 
