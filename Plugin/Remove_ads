@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-09-27 17:49
+#!date = 2024-09-27 18:00
 
 
 [Rule]
@@ -32,6 +32,9 @@ IP-CIDR, 103.37.155.60/32, REJECT, no-resolve
 # DOMAIN, al-log.d.meituan.net, REJECT
 # DOMAIN, babel-statistics-android.d.meituan.net, REJECT
 # DOMAIN, route-stats.d.meituan.net, REJECT
+
+# 飞猪旅行
+AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, %E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C*)), REJECT-DROP
 
 
 [Rewrite]
@@ -70,7 +73,6 @@ IP-CIDR, 103.37.155.60/32, REJECT, no-resolve
 
 # > ———————————— F ————————————
 # 飞猪旅行 //amdc.m.taobao.com
-# ^http?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch reject-dict
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson reject-img
 
 
