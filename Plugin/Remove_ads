@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-09-28 02:16
+#!date = 2024-09-28 10:16
 
 
 [Rule]
@@ -90,6 +90,9 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 # 航旅纵横 //home.umetrip.com, umerp.umetrip.com
 ^http:\/\/home\.umetrip\.com\/gateway\/api\/umetrip\/native reject
 ^http:\/\/umerp\.umetrip\.com\/gateway\/api\/umetrip\/native reject
+
+# 华住会
+^https:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ url reject-dict
 
 
 # > ———————————— I ————————————
@@ -186,8 +189,8 @@ https://tagit.hyhuo.com/recover/list reject
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp reject
 
 # 用药参考 //
-^https?:\/\/api\.medlive\.cn\/promotion-api/adlist reject-200
-^https?:\/\/promotion\.medlive\.cn\/getcover-v2\?app_name reject-200
+^https?:\/\/api\.medlive\.cn\/promotion-api/adlist reject-dict
+^https?:\/\/promotion\.medlive\.cn\/getcover-v2\?app_name reject-dict
 
 
 # > ———————————— Z ————————————
@@ -199,6 +202,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn,api.medlive.cn, client.app.coc.10086.cn
+hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn
 
 
