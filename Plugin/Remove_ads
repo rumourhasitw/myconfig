@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-09-28 10:16
+#!date = 2024-10-04 01:10
 
 
 [Rule]
@@ -35,6 +35,9 @@ IP-CIDR, 103.37.155.60/32, REJECT, no-resolve
 
 # 飞猪旅行
 AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, %E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C*)), REJECT-DROP
+
+# 建设银行 - 已收录|adrules
+# DOMAIN, adv.ccb.com, REJECT
 
 
 [Rewrite]
@@ -132,6 +135,10 @@ https://tagit.hyhuo.com/recover/list reject
 ^https:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(?:brandcpt-vedio|waimai-alita)\/\w+\.zip$ reject-dict
 ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends reject-dict
 
+# 民生银行  //www.cmbc.com.cn
+^https:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ reject-200
+^https:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png reject-200
+
 
 # > ———————————— N ————————————
 
@@ -197,11 +204,24 @@ https://tagit.hyhuo.com/recover/list reject
 # 中国移动开屏广告 //client.app.coc.10086.cn
 ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
 
+# 掌上生活 //mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com
+^https:\/\/mbasecc\.(bas|bcs)\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec reject-dict
+^https:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec reject
+^https:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender\.api\.AdWork\/getAdsBySlotId reject-dict
+
+# 招商银行 //s3gw.cmbimg.com, webappcfg.paas.cmbchina.com
+^https:\/\/s3gw\.cmbimg\.com\/mbappinitads\/ reject
+^https:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig reject-200
+
+# 中国银行 //mbs.boc.cn, mlife.jf365.boc.cn
+^https:\/\/mbs\.boc\.cn\/ubas-mgateway-static\/images\/advertType\/.+.jpg reject-200
+^https:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\?txnId=2PIC000001 reject-200
+
 
 # > ———————————— # ————————————
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn
+hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, qde.qunar.com, homefront.qunar.com, client.qunar.com, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
 
 
