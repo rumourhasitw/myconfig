@@ -50,9 +50,6 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 # > ———————————— B ————————————
 
 # > ———————————— C ————————————
-# 超星学习通 //learn.chaoxing.com
-^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? reject
-
 
 # > ———————————— D ————————————
 # 大众点评 //img.meituan.net
@@ -217,6 +214,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, learn.chaoxing.com, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
+hostname = list-app-m.i4.cn, dxy.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
 
 
