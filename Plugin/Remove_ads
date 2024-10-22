@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-10-22 21:46
+#!date = 2024-10-22 21:49
 
 
 [Rule]
@@ -186,7 +186,8 @@ https://tagit.hyhuo.com/recover/list reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/client\/main\/homePageSmallAd reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/Client\/main\/startPage reject
 ^https?:\/\/api\.yikaobang\.com\.cn\/index\.php\/version\/version\/check reject
-^^https:\/\/api\.yikaobang\.com\.cn\/index\.php\/client\/main\/adsInComment reject
+^https:\/\/api\.yikaobang\.com\.cn\/index\.php\/client\/main\/adsInComment reject
+^https:\/\/api\.yikaobang\.com\.cn\/index\.php\/client\/main\/ads reject
 ^https:\/\/api\.yikaobang\.com\.cn\/index\.php\/Shop reject
 
 # 医保服务平台 //fuwu.nhsa.gov.cn
