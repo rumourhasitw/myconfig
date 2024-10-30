@@ -2,18 +2,20 @@
 #!desc= 过滤天天基金开屏广告。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/TiantianFund.png
 #!author = Rumourhasit
-#!date = 2024-10-30 21:35
+#!date = 2024-10-30 21:44
 
 [rule]
-# 天天基金去广告规则
-DOMAIN,ttdns.95021.com,REJECT
-DOMAIN,ttdns.1234567.com.cn,REJECT
-DOMAIN,ttdns.tiantianfunds.com,REJECT
+# 拦截HTTPDNS
+DOMAIN, ttdns.tiantianfunds.com, REJECT
+DOMAIN, ttdns.95021.com, REJECT
+DOMAIN, ttdns.1234567.com.cn, REJECT
 
-DOMAIN,np-newspic.dfcfw.com,REJECT
+# 
+DOMAIN, np-newspic.dfcfw.com, REJECT
 
 
 [rewrite]
+# 去除开屏
 ^https:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetAppStartImg reject-dict
 
 
@@ -29,11 +31,16 @@ DOMAIN,np-newspic.dfcfw.com,REJECT
 ^https:\/\/community\.tiantianfunds\.com\/community reject
 
 ^https:\/\/activity\.tiantianfunds\.com\.cn\/activity-platform reject
+
 ^https://appactive.1234567.com.cn/AppoperationApi/Modules/GetModuleconfig reject
+
+^https:\/\/appactive\.1234567\.com\.cn\/operationapi\/lowCode\/getContent reject
+
+^https:\/\/fundts\.eastmoney\.com\/apphome\/show\/home reject
 
 
 
 
 [mitm]
-hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com, activity.tiantianfunds.com.cn
+hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com, activity.tiantianfunds.com.cn, fundts.easymoney.com
 
