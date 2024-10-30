@@ -2,7 +2,7 @@
 #!desc= 移除天天基金开屏广告及部分板块广告内容。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/TiantianFund.png
 #!author = Rumourhasit
-#!date = 2024-10-30 22:04
+#!date = 2024-10-30 22:09
 
 [rule]
 # 拦截HTTPDNS
@@ -46,7 +46,7 @@ DOMAIN, np-newspic.dfcfw.com, REJECT
 
 ^https:\/\/newsinfo\.eastmoney\.com\/kuaixun\/v2\/api\/content reject
 
-^https:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetNewsTopicDetail reject
+# ^https:\/\/appactive\.1234567\.com\.cn\/AppoperationApi\/OperationService\/GetNewsTopicDetail reject
 
 [mitm]
 hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com, activity.tiantianfunds.com.cn, fundts.easymoney.com, avsvc.lvb.eastmoney.com, mp.95021.com, material.1234567.com.cn, newsinfo.eastmoney.com
