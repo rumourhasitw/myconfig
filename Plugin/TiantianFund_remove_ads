@@ -38,9 +38,9 @@ DOMAIN, np-newspic.dfcfw.com, REJECT
 
 ^https:\/\/fundts\.eastmoney\.com\/apphome\/show\/home reject
 
-^https:\/\/avsvc\.lvb\.eastmoney\.com\/lvbcooperation\/api\/AV
+^https:\/\/avsvc\.lvb\.eastmoney\.com\/lvbcooperation\/api\/AV reject
 
-^https:\/\/mp\.95021\.com\/ConfigApplet\/AppletApi\/getMiniProgramPackApiList
+^https:\/\/mp\.95021\.com\/ConfigApplet\/AppletApi\/getMiniProgramPackApiList reject
 
 
 [mitm]
