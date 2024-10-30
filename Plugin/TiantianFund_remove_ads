@@ -2,7 +2,7 @@
 #!desc= 过滤天天基金开屏广告。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/TiantianFund.png
 #!author = Rumourhasit
-#!date = 2024-10-30 21:46
+#!date = 2024-10-30 21:52
 
 [rule]
 # 拦截HTTPDNS
@@ -40,8 +40,9 @@ DOMAIN, np-newspic.dfcfw.com, REJECT
 
 ^https:\/\/avsvc\.lvb\.eastmoney\.com\/lvbcooperation\/api\/AV
 
+^https:\/\/mp\.95021\.com\/ConfigApplet\/AppletApi\/getMiniProgramPackApiList
 
 
 [mitm]
-hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com, activity.tiantianfunds.com.cn, fundts.easymoney.com, avsvc.lvb.eastmoney.com
+hostname = appactive.1234567.com.cn, roadshow.lvb.eastmoney.com, mp.1234567.com.cn, appconfig2.1234567.com.cn, np-fundlist.eastmoney.com, community.tiantianfunds.com, activity.tiantianfunds.com.cn, fundts.easymoney.com, avsvc.lvb.eastmoney.com, mp.95021.com
 
