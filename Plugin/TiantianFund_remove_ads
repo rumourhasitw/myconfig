@@ -2,7 +2,7 @@
 #!desc= 移除天天基金开屏广告及部分板块广告内容。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/TiantianFund.png
 #!author = Rumourhasit
-#!date = 2024-10-30 21:59
+#!date = 2024-10-30 22:04
 
 [rule]
 # 拦截HTTPDNS
@@ -42,7 +42,7 @@ DOMAIN, np-newspic.dfcfw.com, REJECT
 
 ^https:\/\/mp\.95021\.com\/ConfigApplet\/AppletApi\/getMiniProgramPackApiList reject
 
-^https:\/\/material\.1234567\.com\.cn\/render reject
+# ^https:\/\/material\.1234567\.com\.cn\/render reject
 
 ^https:\/\/newsinfo\.eastmoney\.com\/kuaixun\/v2\/api\/content reject
 
