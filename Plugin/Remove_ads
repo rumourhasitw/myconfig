@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-10-30 09:51
+#!date = 2024-10-31 22:06
 
 
 [Rule]
@@ -38,6 +38,9 @@ AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-A
 
 # 飞猪旅行
 AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, %E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C*)), REJECT-DROP
+
+# 一淘
+AND,((USER-AGENT,ishare4iphone*),(URL-REGEX,^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch)),REJECT
 
 # 建设银行 - 已收录|adrules
 # DOMAIN, adv.ccb.com, REJECT
@@ -81,6 +84,9 @@ AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AG
 
 
 # > ———————————— G ————————————
+# 高德地图 屏蔽更新
+^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? reject-dict
+
 
 # > ———————————— H ————————————
 # 华宝智投 //api.touker.com
