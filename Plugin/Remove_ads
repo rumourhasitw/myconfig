@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-11-10 11:21
+#!date = 2024-11-10 17:21
 
 
 [Rule]
@@ -220,8 +220,10 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 # > ———————————— Z ————————————
-# 中国移动开屏广告 //client.app.coc.10086.cn
+# 中国移动开屏广告 //client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com
 ^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) reject
+^https?:\/\/tower\.ubixioe\.com\/mob\/mediation reject
+^https?:\/\/sdk1xyajs\.data\.kuiniuca\.com reject
 
 # 掌上生活 //mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com
 ^https:\/\/mbasecc\.(bas|bcs)\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec reject-dict
@@ -241,6 +243,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
+hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
 
 
