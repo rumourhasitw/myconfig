@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-10-31 22:06
+#!date = 2024-11-10 10:06
 
 
 [Rule]
@@ -127,8 +127,8 @@ https://tagit.hyhuo.com/recover/list reject
 # > ———————————— M ————————————
 # 麦当劳 McDonald //api.mcd.cn, img.mcd.cn
 ^https:\/\/api\.mcd\.cn\/bff\/portal\/home\/(hotActivity|splash|richpop) reject
-^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
-^https:\/\/img\.mcd\.cn\/cma\/img\/banner1\.jpg reject-dict
+# ^https:\/\/api\.mcd\.cn\/bff\/portal\/version\/upgrade reject-dict
+# ^https:\/\/img\.mcd\.cn\/cma\/img\/banner1\.jpg reject-dict
 
 # 米家 //home.mi.com
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
