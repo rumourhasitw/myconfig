@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-11-10 17:21
+#!date = 2024-12-05 16:50
 
 
 [Rule]
@@ -21,17 +21,13 @@ DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 DOMAIN-SUFFIX, doubleclick-cn.net, REJECT
 DOMAIN-SUFFIX, doubleclick.net, REJECT
 
-# 微信公众号 //Adrules收录
-# DOMAIN-SUFFIX, wxs.qq.com, REJECT
-
 # 美团 & 美团外卖
 IP-CIDR, 103.37.155.60/32, REJECT, no-resolve
-# //已被BlockAdvertisers收录部分
-# DOMAIN, maplocatesdksnapshot.d.meituan.net, REJECT
-# DOMAIN, metrics-picture.d.meituan.net, REJECT
-# DOMAIN, al-log.d.meituan.net, REJECT
-# DOMAIN, babel-statistics-android.d.meituan.net, REJECT
-# DOMAIN, route-stats.d.meituan.net, REJECT
+DOMAIN, maplocatesdksnapshot.d.meituan.net, REJECT
+DOMAIN, metrics-picture.d.meituan.net, REJECT
+DOMAIN, al-log.d.meituan.net, REJECT
+DOMAIN, babel-statistics-android.d.meituan.net, REJECT
+DOMAIN, route-stats.d.meituan.net, REJECT
 
 # 饿了么
 AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, eleme*)), REJECT
@@ -153,29 +149,17 @@ https://tagit.hyhuo.com/recover/list reject
 # > ———————————— P ————————————
 
 # > ———————————— Q ————————————
-# QQ钱包 //m.qianbao.qq.com
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? reject-dict
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
-^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
-
 
 # > ———————————— R ————————————
 # > 瑞幸咖啡 //capi.lkcoffee.com
 # ^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/(homePage\/contactor\/modules|app\/adposNew) reject
-# 日历
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList reject
-# 礼品卡
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage reject
-# 幸运集杯横幅
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck reject
-# 新人推荐
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea reject
-# 轮播图
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules reject
-# 首页商品列表
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList reject
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList reject
-# 开屏广告
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew reject
 
 
@@ -243,6 +227,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, m.qianbao.qq.com, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
+hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
 
 
