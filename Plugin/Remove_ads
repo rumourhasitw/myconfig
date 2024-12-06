@@ -2,7 +2,7 @@
 #!desc = Remove some advertisements from own-use applications.
 #!author = Rumourhasit
 #!icon = https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Solar.png
-#!date = 2024-12-05 16:50
+#!date = 2024-12-06 18:34
 
 
 [Rule]
@@ -198,10 +198,6 @@ https://tagit.hyhuo.com/recover/list reject
 # 医保服务平台 //fuwu.nhsa.gov.cn
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp reject
 
-# 用药参考 //
-^https?:\/\/api\.medlive\.cn\/promotion-api/adlist reject-dict
-^https?:\/\/promotion\.medlive\.cn\/getcover-v2\?app_name reject-dict
-
 
 # > ———————————— Z ————————————
 # 中国移动开屏广告 //client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com
@@ -227,6 +223,6 @@ https://tagit.hyhuo.com/recover/list reject
 
 
 [Mitm]
-hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, promotion.medlive.cn, api.medlive.cn, client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
+hostname = list-app-m.i4.cn, dxy.com, amdc.m.taobao.com, api.touker.com, res.hongyibo.com.cn, home.umetrip.com, umerp.umetrip.com, appapi.huazhu.com, gab.122.gov.cn, res.kfc.com.cn, dynamicad.kfc.com.cn, appcommon.kfc.com.cn, tagit.hyhuo.com, api.mcd.cn, img.mcd.cn, home.mi.com, wmapi.meituan.com, flowplus.meituan.net, img.meituan.net, s3plus.meituan.net, apimobile.meituan.net, www.cmbc.com.cn, capi.lkcoffee.com, app.wjjya.com, adm.10jqka.com.cn, u.thsi.cn, stat.10jqka.com.cn, mp.weixin.qq.com, api.yikaobang.com.cn, fuwu.nhsa.gov.cn, client.app.coc.10086.cn, tower.ubixioe.com, sdk1xyajs.data.kuiniuca.com, mbasecc.bcs.cmbchina.com, mbasecc.bas.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com, s3gw.cmbimg.com, webappcfg.paas.cmbchina.com, mbs.boc.cn, mlife.jf365.boc.cn
 
 
