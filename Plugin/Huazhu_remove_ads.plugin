@@ -7,6 +7,8 @@
 
 
 [Rewrite]
+^https:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ reject-dict
+
 ^https:\/\/hweb-hotel\.huazhu\.com\/home\/queryRecommond reject
 
 ^https:\/\/hweb-hotel\.huazhu\.com\/home\/huazhuWorld reject
@@ -24,8 +26,6 @@
 ^https:\/\/hweb-channel\.huazhu\.com\/head_model\/banner reject
 
 ^https:\/\/res-pub\.huazhu\.com\/frontconf\/selection-channel reject
-
-^https:\/\/appapi\.huazhu\.com:8443\/client\/app\/getAppStartPage
 
 ^https:\/\/hweb-manager\.huazhu\.com\/config\/getStaticConfig reject
 
