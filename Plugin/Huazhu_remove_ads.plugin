@@ -2,7 +2,7 @@
 #!desc= 移除华住会开屏广告及部分板块广告内容。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Huazhu.jpg
 #!author = Rumourhasit
-#!date = 2025-01-21 13:58
+#!date = 2025-01-21 14:11
 
 
 
@@ -18,6 +18,8 @@
 ^https:\/\/hweb-hotel\.huazhu\.com\/\/home\/querySelectHotel reject
 
 ^https:\/\/hweb-channel\.huazhu\.com\/channel\/list\/queryChannelList reject
+
+^https:\/\/hweb-channel\.huazhu\.com\/channel\/list\/queryChannelDestination reject
 
 ^https:\/\/hweb-channel\.huazhu\.com\/head_model\/banner reject
 
@@ -35,6 +37,8 @@
 
 ^https:\/\/cdn\.huazhu\.com\/hpd-anyone reject
 
+^https:\/\/hweb-servicechannel\.huazhu\.com\/api\/guide\/tag
+
 
 [Mitm]
-hostname = hweb-hotel.huazhu.com, hweb-channel.huazhu.com, res-pub.huazhu.com, appapi.huazhu.com, hweb-manager.huazhu.com, api-hweb-hzh.huazhu.com, cdn.huazhu.com
+hostname = hweb-hotel.huazhu.com, hweb-channel.huazhu.com, res-pub.huazhu.com, appapi.huazhu.com, hweb-manager.huazhu.com, api-hweb-hzh.huazhu.com, cdn.huazhu.com, hweb-servicechannel.huazhu.com
