@@ -33,10 +33,13 @@ DOMAIN, route-stats.d.meituan.net, REJECT
 AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, eleme*)), REJECT
 
 # 飞猪旅行
-AND,((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, %E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C*)), REJECT-DROP
+AND,((URL-REGEX, "^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch"), (USER-AGENT, "%E9%A3%9E%E7%8C%AA%E6%97%85%E8%A1%8C*")), REJECT-DROP
+
+# Test
+# AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")),REJECT
 
 # 一淘
-AND,((USER-AGENT,ishare4iphone*),(URL-REGEX,^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch)),REJECT
+AND,((USER-AGENT, "ishare4iphone*"), (URL-REGEX, "^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch")), REJECT
 
 # 建设银行 - 已收录|adrules
 # DOMAIN, adv.ccb.com, REJECT
