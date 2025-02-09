@@ -2,11 +2,12 @@
 #!desc= 移除华住会开屏广告及部分板块广告内容。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Huazhu.jpg
 #!author = Rumourhasit
-#!date = 2025-01-29 17:02
+#!date = 2025-02-10 00:47
 
 
 
 [Rewrite]
+# 开屏广告
 ^https:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ reject-dict
 
 ^https:\/\/hweb-hotel\.huazhu\.com\/home\/queryRecommond reject-dict
@@ -25,6 +26,7 @@
 
 ^https:\/\/hweb-channel\.huazhu\.com\/head_model\/banner reject-dict
 
+# 华住精选
 ^https:\/\/res-pub\.huazhu\.com\/frontconf\/selection-channel reject-dict
 
 ^https:\/\/hweb-manager\.huazhu\.com\/config\/getStaticConfig reject-dict
@@ -39,6 +41,7 @@
 
 ^https:\/\/hweb-servicechannel\.huazhu\.com\/api\/guide\/tag reject-dict
 
+# 积分竞拍
 ^https:\/\/newactivity\.huazhu\.com\/currency\/pointAuction reject-dict
 
 ^https:\/\/newactivity\.huazhu\.com\/commodity\/getGoodsList reject-dict
