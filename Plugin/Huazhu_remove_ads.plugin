@@ -2,7 +2,7 @@
 #!desc= 移除华住会开屏广告及部分板块广告内容。
 #!icon= https://raw.githubusercontent.com/rumourhasitw/myconfig/main/icon/Huazhu.jpg
 #!author = Rumourhasit
-#!date = 2025-02-10 00:57
+#!date = 2025-02-10 01:08
 
 
 
@@ -45,6 +45,8 @@
 ^https:\/\/newactivity\.huazhu\.com\/currency\/pointAuction reject-dict
 
 ^https:\/\/newactivity\.huazhu\.com\/commodity\/getGoodsList reject-dict
+
+^https:\/\/newactivity\.huazhu\.com\/currency\/pointStore\/getGoodsList reject-dict
 
 
 
